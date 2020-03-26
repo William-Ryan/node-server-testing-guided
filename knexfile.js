@@ -12,6 +12,19 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+  production: {
+    client: "postgres",
+    connection: {
+      filename: "./data/hobbits.db3",
+    },
+    useNullAsDefault: true,
+    migrations: {
+      directory: "./data/migrations",
+    },
+    seeds: {
+      directory: "./data/seeds",
+    },
+  },
   testing: {
     client: "sqlite3",
     connection: {
